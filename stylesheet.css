@@ -108,3 +108,10 @@ header{
 .head-right a.aktif{
   color: #FFB800;
 }
+
+footer {
+  background-img: url("logo-footer.png");
+  background-color: #ffb800;
+  height: 64px;
+  padding: 62px;
+}
