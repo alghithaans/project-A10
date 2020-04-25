@@ -5,6 +5,9 @@ body {
 a {
   text-decoration: none;
 }
+.clear {
+  clear: left;
+}
 a, btn {
   transition: all 0.3s ease;
 }
@@ -109,9 +112,73 @@ header{
   color: #FFB800;
 }
 
+.profile-wrapper {
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #f7f7f7;
+}
+
+.heading {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.heading h1 {
+  font-weight: bold;
+  color: #FFB800;
+}
+
+.heading p {
+  font-size: 24px;
+  font-weight: normal;
+  color: black;
+}
+
+.profile {
+  float: left;
+  width: 20%;
+}
+
+.profile-icon {
+  position: relative;
+}
+
+.profile-icon h3 {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  color: #FFB800;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.pekerjaan {
+  width: 100%;
+  display: inline-block;
+  margin-top: 60px;
+  font-size: 18px;
+  color: black;
+}
+
+.asal {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 18px;
+  color: black;
+}
+
+.profil {
+  background-color: #FFB800;
+  margin-bottom: 30px;
+}
+
 footer {
-  background-img: url("logo-footer.png");
+  background-image: url("logo-footer.png");
   background-color: #ffb800;
   height: 64px;
   padding: 62px;
 }
+
+
