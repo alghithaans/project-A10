@@ -173,3 +173,12 @@ header{
   background-color: #FFB800;
   margin-bottom: 30px;
 }
+
+footer {
+  background-image: url("logo-footer.png");
+  background-color: #ffb800;
+  height: 64px;
+  padding: 62px;
+}
+
+
