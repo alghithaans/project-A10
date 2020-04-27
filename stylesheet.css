@@ -1,5 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin:0;
+  padding: 0;
   font-family: "Calibri";
 }
 a {
@@ -11,18 +16,26 @@ a {
 a, btn {
   transition: all 0.3s ease;
 }
-.ekstra-1 {
+
+.container{
+  max-width: 1170px;
   width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.ekstra-1 {
+  background-image: url("img/main.png");
+  background-size: cover;
+  height: 670px
 }
 .ekstra-1-container {
-  background-image: url(main.png);
-  background-size: cover;
   line-height: 20px;
   color: white;
-  padding: 200px 173px 40px 173px;
+  padding: 180px 0 100px 0;
 }
 .ekstra-1-container span {
-  color: #ffb200;
+  color: #ffb800;
 }
 .halo {
   font-size: 52px;
@@ -43,27 +56,46 @@ a, btn {
 }
 .btn-ekstra-1 {
   border-style: solid;
-  border-color: #ffb200;
+  border-color: #ffb800;
 }
 .btn-ekstra-1:hover {
   border-style: solid;
   border-color: #f1f1f1;
 }
 .ekstra-1-menu {
+  width: 100%
   height: 150px;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 .menu {
   float:left;
   display: inline-block;
   padding:10px 10px 10px 10px;
-  width: 25%;
+  width: 33%;
   background-color: rgba(128,128,128,0.5);
   color: white;
 }
-.menu:hover {
-  background-color: rgba(40,40,40,0.8);
+
+.menul{
+  border-radius: 10px 0px 0px 10px;
+  float:left;
+  display: inline-block;
+  padding:10px 10px 10px 10px;
+  width: 33%;
+  background-color: rgba(128,128,128,0.5);
+  color: white;
 }
+
+.menur{
+  border-radius: 0px 10px 10px 0px;
+  float:left;
+  display: inline-block;
+  padding:10px 10px 10px 10px;
+  width: 33%;
+  background-color: rgba(128,128,128,0.5);
+  color: white;
+}
+
 .menu-icon {
   float:left;
 }
@@ -77,9 +109,17 @@ a, btn {
 .menu-content p {
   font-size: 14px;
 }
+
+.nav{
+  top: 0;
+  z-index: 30;
+  background-color: rgba(34, 49, 52, 0.3);
+  position: fixed;
+  width: 100%;
+  padding-bottom: 10px;
+}
 header{
-  padding-left: 173px;
-  padding-right: 173px;
+
   transition: all 0.5s;
 }
 
@@ -87,6 +127,12 @@ header{
   float: right;
   margin-top: 36px;
 }
+
+.bars{
+  float: right;
+  display: none;
+}
+
 
 .head-left{
   float: left;
@@ -112,14 +158,6 @@ header{
   color: #FFB800;
 }
 
-.profile-wrapper {
-  width: 100%;
-  text-align: center;
-  padding-top: 30px;
-  padding-bottom: 20px;
-  background-color: #f7f7f7;
-}
-
 .heading {
   padding-top: 10px;
   padding-bottom: 30px;
@@ -136,9 +174,37 @@ header{
   color: black;
 }
 
+
+
+
+.profile-wrapper {
+  width: 100%;
+  text-align: center;
+  padding: 60px 0px;
+
+}
+.profiles{
+  display: flex;
+}
 .profile {
-  float: left;
   width: 20%;
+  flex: auto;
+  padding: 20px;
+}
+.btn-profil {
+  background-color: #FFB800;
+  box-shadow: 0 7px #C48D10;
+  cursor: pointer;
+}
+
+.btn-profil:hover {
+  background-color: #FFBA31;
+}
+
+.btn-profil:active{
+  position: relative;
+  top: 3px;
+  box-shadow: none;
 }
 
 .profile-icon {
@@ -169,16 +235,37 @@ header{
   color: black;
 }
 
-.profil {
-  background-color: #FFB800;
-  margin-bottom: 30px;
+.ekstra-2 {
+  height: 311px;
+  background-color: #ffb800;
+  margin-top: 50px;
 }
+.ekstra-2 img {
+  float: left;
+  width: 500px;
+  margin-top: 100px;
+}
+.ekstra-2-content {
+  line-height: 10px;
+  float: right;
+  padding-right: 15px;
+  margin-top: 100px;
+  color: black;
+}
+.ekstra-2-content h4 {
+  font-weight: bold;
+  font-size: 36px;
+}
+
 
 footer {
-  background-image: url("logo-footer.png");
-  background-color: #ffb800;
-  height: 64px;
-  padding: 62px;
+  width: 100%;
+  height: 150px;
+  padding-top: 40px;
+  padding-left: 15px;
+  background-color: grey;
 }
-
+footer img {
+  float: left;
+}
 
